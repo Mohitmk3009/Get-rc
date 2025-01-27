@@ -12,7 +12,7 @@ const Pagination = ({ totalPages, setCurrentPage, currentPage }: PaginationProps
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
+      setIsMobile(window.innerWidth <= 768);
       setVisibleRange(isMobile ? { start: 1, end: 5 } : { start: 1, end: 10 });
     };
     handleResize(); // Initial check

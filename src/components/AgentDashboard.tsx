@@ -35,7 +35,6 @@ const AgentDashboard = () => {
         fetchDashboardData();
     }, [success, isGetRcModelOpen]);
 
-
     const handleDownloadBulkRc = async (e: React.ChangeEvent<HTMLInputElement>) => {
         setLoading(true);
         const toastLoading = toast.loading("Uploading CSV and Downloading Bulk RC...");
