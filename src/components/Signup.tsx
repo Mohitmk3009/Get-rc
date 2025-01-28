@@ -6,6 +6,8 @@ import email from "../assets/email.png";
 import pass from "../assets/padlock.png";
 import client from "../utils/axiosClient";
 import { toast } from "sonner";
+import LoginandSignupHeader from './LoginandSignupHeader';
+
 
 const Signup = () => {
   const [loading, setLoading] = useState(false)
@@ -78,6 +80,8 @@ const Signup = () => {
   };
 
   return (
+    <>
+      <LoginandSignupHeader />
     <div className="flex items-center justify-center min-h-[90vh] bg-gradient-to-b from-cyan-200 to-white">
       <div className="w-96 p-6 mx-5 lg:mx-0 bg-white rounded-lg shadow-lg">
         <h3 className="text-center text-lg font-semibold mb-4">Sign Up</h3>
@@ -160,6 +164,7 @@ const Signup = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 
